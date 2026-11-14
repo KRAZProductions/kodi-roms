@@ -8,7 +8,8 @@ TOOLS = os.path.join(ROOT, 'tools')
 BASE = (sys.argv[1] if len(sys.argv) > 1 else
         'https://raw.githubusercontent.com/KRAZProductions/kodi-roms/main').rstrip('/')
 REPO_ID, REPO_VER = 'repository.kraz.roms', '1.0.0'
-PACK_VER = '1.0.0'
+PACK_VER = '1.0.0'  # default; per-pack overrides below
+PACK_VERS = {'service.kraz.roms.jaguar': '1.1.0', 'service.kraz.roms.lynx': '1.0.1'}
 PACKS = [  # folder, add-on id, games source name used by SQUID, title
     ('Jaguar-Games', 'service.kraz.roms.jaguar', 'Jaguar Games', 'Atari Jaguar'),
     ('Lynx-Games', 'service.kraz.roms.lynx', 'Lynx Games', 'Atari Lynx'),
@@ -17,8 +18,9 @@ PACKS = [  # folder, add-on id, games source name used by SQUID, title
 ]
 
 def pack_xml(aid, title, n):
+    ver = PACK_VERS.get(aid, PACK_VER)
     return f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="{aid}" name="{title} ROMs" version="{PACK_VER}" provider-name="KRAZ Productions">
+<addon id="{aid}" name="{title} ROMs" version="{ver}" provider-name="KRAZ Productions">
   <requires><import addon="xbmc.python" version="3.0.0"/></requires>
   <extension point="xbmc.python.script" library="service.py">
     <provides>executable game</provides>
@@ -68,13 +70,14 @@ svc = os.path.join(TOOLS, 'pack-template', 'service.py')
 for folder, aid, source, title in PACKS:
     roms = sorted(f for f in os.listdir(os.path.join(ROOT, folder))
                   if os.path.isfile(os.path.join(ROOT, folder, f)))
-    xml = pack_xml(aid, title, len(roms))
+    games = [r for r in roms if not r.lower().endswith(('.png', '.jpg', '.jpeg'))]
+    xml = pack_xml(aid, title, len(games))
     files = [('addon.xml', xml), ('service.py', svc),
              ('pack.json', json.dumps({'source': source}))]
     files += [(f'roms/{r}', os.path.join(ROOT, folder, r)) for r in roms]
-    write_zip(os.path.join(zips, aid, f'{aid}-{PACK_VER}.zip'), aid, files)
+    write_zip(os.path.join(zips, aid, f'{aid}-{PACK_VERS.get(aid, PACK_VER)}.zip'), aid, files)
     entries.append(xml)
-    print(f'{aid}: {len(roms)} roms')
+    print(f'{aid}: {len(games)} games, {len(roms)} files')
 
 rxml = repo_xml()
 write_zip(os.path.join(zips, REPO_ID, f'{REPO_ID}-{REPO_VER}.zip'), REPO_ID, [('addon.xml', rxml)])

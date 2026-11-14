@@ -3,12 +3,17 @@
 ROMs for the SQUID-MBC Kodi bundle on the Atari VCS, copied 2026-11-14 from
 `/media/user/VCS_Bundles/bundles/UJZi5fBzNn0MEFWQ` on the dev unit.
 
-| Folder | Files | System |
-|---|---|---|
-| Jaguar-Games | 2 | Atari Jaguar |
-| Lynx-Games | 172 | Atari Lynx |
-| NGP-Games | 72 | Neo Geo Pocket / Color |
-| Supervision-Games | 88 | Watara Supervision |
+| Folder | Games | System | Pack version |
+|---|---|---|---|
+| Jaguar-Games | 22 | Atari Jaguar | 1.1.0 |
+| Lynx-Games | 86 | Atari Lynx | 1.0.1 |
+| NGP-Games | 36 | Neo Geo Pocket / Color | 1.0.0 |
+| Supervision-Games | 44 | Watara Supervision | 1.0.0 |
+
+Every game has box art as `<game name>.png` next to the ROM.
+2026-11-14: 21 Jaguar games added (art from thumbnails.libretro.com Named_Boxarts;
+Ultimate Brain Games uses a Named_Snaps screenshot, no box art exists). All 22
+Jaguar games ran for 25+ seconds in SQUID v20 on the PC (Virtual Jaguar core).
 
 ## Install in Kodi (repo must be public while you do this)
 
@@ -23,5 +28,5 @@ Opening a pack from Program add-ons runs the restore again.
 
 ## Updating
 
-Change the `*-Games` folders, raise `PACK_VER` in `tools/build_repo.py`,
+Change the `*-Games` folders, raise that pack's version in `PACK_VERS` in `tools/build_repo.py`,
 run `python3 tools/build_repo.py`, commit and push. Kodi picks up the new version.

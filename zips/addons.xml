@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.kraz.roms.jaguar" name="Atari Jaguar ROMs" version="1.0.0" provider-name="KRAZ Productions">
+<addon id="service.kraz.roms.jaguar" name="Atari Jaguar ROMs" version="1.1.0" provider-name="KRAZ Productions">
   <requires><import addon="xbmc.python" version="3.0.0"/></requires>
   <extension point="xbmc.python.script" library="service.py">
     <provides>executable game</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">2 Atari Jaguar games for SQUID-MBC</summary>
-    <description lang="en_GB">Installs 2 Atari Jaguar ROMs into SQUID's games folder and adds the games source.</description>
+    <summary lang="en_GB">22 Atari Jaguar games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 22 Atari Jaguar ROMs into SQUID's games folder and adds the games source.</description>
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="service.kraz.roms.lynx" name="Atari Lynx ROMs" version="1.0.0" provider-name="KRAZ Productions">
+<addon id="service.kraz.roms.lynx" name="Atari Lynx ROMs" version="1.0.1" provider-name="KRAZ Productions">
   <requires><import addon="xbmc.python" version="3.0.0"/></requires>
   <extension point="xbmc.python.script" library="service.py">
     <provides>executable game</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">172 Atari Lynx games for SQUID-MBC</summary>
-    <description lang="en_GB">Installs 172 Atari Lynx ROMs into SQUID's games folder and adds the games source.</description>
+    <summary lang="en_GB">86 Atari Lynx games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 86 Atari Lynx ROMs into SQUID's games folder and adds the games source.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -31,8 +31,8 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">72 Neo Geo Pocket games for SQUID-MBC</summary>
-    <description lang="en_GB">Installs 72 Neo Geo Pocket ROMs into SQUID's games folder and adds the games source.</description>
+    <summary lang="en_GB">36 Neo Geo Pocket games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 36 Neo Geo Pocket ROMs into SQUID's games folder and adds the games source.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -43,8 +43,8 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">88 Watara Supervision games for SQUID-MBC</summary>
-    <description lang="en_GB">Installs 88 Watara Supervision ROMs into SQUID's games folder and adds the games source.</description>
+    <summary lang="en_GB">44 Watara Supervision games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 44 Watara Supervision ROMs into SQUID's games folder and adds the games source.</description>
     <platform>all</platform>
   </extension>
 </addon>
