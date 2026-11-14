@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.kraz.roms.jaguar" name="Atari Jaguar ROMs" version="1.0.0" provider-name="KRAZ Productions">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.script" library="service.py">
+    <provides>executable game</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">2 Atari Jaguar games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 2 Atari Jaguar ROMs into SQUID's games folder and adds the games source.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.kraz.roms.lynx" name="Atari Lynx ROMs" version="1.0.0" provider-name="KRAZ Productions">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.script" library="service.py">
+    <provides>executable game</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">172 Atari Lynx games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 172 Atari Lynx ROMs into SQUID's games folder and adds the games source.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.kraz.roms.ngp" name="Neo Geo Pocket ROMs" version="1.0.0" provider-name="KRAZ Productions">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.script" library="service.py">
+    <provides>executable game</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">72 Neo Geo Pocket games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 72 Neo Geo Pocket ROMs into SQUID's games folder and adds the games source.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.kraz.roms.supervision" name="Watara Supervision ROMs" version="1.0.0" provider-name="KRAZ Productions">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.script" library="service.py">
+    <provides>executable game</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">88 Watara Supervision games for SQUID-MBC</summary>
+    <description lang="en_GB">Installs 88 Watara Supervision ROMs into SQUID's games folder and adds the games source.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="repository.kraz.roms" name="KRAZ ROMs Repository" version="1.0.0" provider-name="KRAZ Productions">
+  <extension point="xbmc.addon.repository" name="KRAZ ROMs Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/KRAZProductions/kodi-roms/main/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/KRAZProductions/kodi-roms/main/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/KRAZProductions/kodi-roms/main/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">ROM packs for SQUID-MBC</summary>
+    <description lang="en_GB">Jaguar, Lynx, Neo Geo Pocket and Supervision ROM packs.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
