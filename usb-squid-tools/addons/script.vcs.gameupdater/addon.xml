@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.vcs.gameupdater" name="VCS Game Updater" version="1.0.0" provider-name="K.R.A.Z. Productions">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.certifi" version="2019.9.11"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Update an Atari VCS game from the developer's own GitHub link</summary>
+    <description lang="en_GB">Type the update GitHub link for your game. The updater downloads the build, reads the StoreID in its bundle.ini and checks it against the VCS game registry and the game installed on this console. If they match, it replaces the old game with the new build through the console's installer. Saves are kept.</description>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

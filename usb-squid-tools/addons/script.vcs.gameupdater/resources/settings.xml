@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings version="1">
+  <section id="script.vcs.gameupdater">
+    <category id="general" label="General">
+      <group id="1">
+        <setting id="last_link" type="string" label="Last GitHub link">
+          <level>0</level>
+          <default/>
+          <control type="edit" format="string"/>
+        </setting>
+      </group>
+    </category>
+  </section>
+</settings>
