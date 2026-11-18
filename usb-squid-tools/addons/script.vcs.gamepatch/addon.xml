@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.vcs.gamepatch" name="Game Updater" version="1.0.0" provider-name="SQUID-MBC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.vcs.usbport" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Updates and patches games from the USB update port, only when the bundle information matches</summary>
+    <description lang="en_GB">Reads patch packages from the USB Update Port while Kodi is running. A patch is applied only when it names this exact bundle (StoreID) and a bundle version at or below the one installed, and only when every file's SHA-256 checksum matches. Patches are written to the writable Kodi home (emulator cores, add-ons, a patched-games overlay) and never to the read-only bundle or the VCS Bundle drive. Replaced files are backed up first. Open it from Programs to see and apply any waiting patches.</description>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
