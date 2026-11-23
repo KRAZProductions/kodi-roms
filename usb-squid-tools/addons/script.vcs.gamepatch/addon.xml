@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.vcs.gamepatch" name="Game Updater" version="1.0.0" provider-name="SQUID-MBC">
+<addon id="script.vcs.gamepatch" name="Kodi Updater USB Tool" version="1.0.0" provider-name="SQUID-MBC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.vcs.usbport" version="1.0.0"/>

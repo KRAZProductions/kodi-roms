@@ -1,4 +1,4 @@
-# USB Update Port: the shared logic both this add-on and the Game Updater use.
+# USB Update Port: the shared logic both this add-on and the Kodi Updater USB Tool use.
 #
 # Background (confirmed on the dev unit, 2026-10-30): the Atari VCS runs every
 # bundle under bwrap. The sandbox bind-mounts ONLY the bundle's own folder

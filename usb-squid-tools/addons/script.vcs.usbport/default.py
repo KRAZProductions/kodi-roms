@@ -46,7 +46,7 @@ def main():
         where = status.get("port") or "(none)"
         if status.get("writable"):
             lines.append("[COLOR lightgreen]OPEN[/COLOR] - %s" % where)
-            lines.append("Drop update or patch packages here; the Game Updater")
+            lines.append("Drop update or patch packages here; the Kodi Updater USB Tool")
             lines.append("reads them while Kodi is running.")
         else:
             lines.append("[COLOR orange]OPEN (read-only)[/COLOR] - %s" % where)

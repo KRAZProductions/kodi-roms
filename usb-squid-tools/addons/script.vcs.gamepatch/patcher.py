@@ -1,4 +1,4 @@
-# Game Updater: find, verify and apply game patches that arrive on the open
+# Kodi Updater USB Tool: find, verify and apply game patches that arrive on the open
 # USB update port.
 #
 # A patch only ever applies to the writable Kodi home (add-ons, userdata, a

@@ -10,7 +10,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">Checks whether a USB drive can be reached and opens a write-safe update port while Kodi is running</summary>
-    <description lang="en_GB">The Atari VCS runs every app in a sandbox that hides USB storage, so an add-on inside Kodi cannot mount or see a second drive on its own. This add-on reports exactly what it can and cannot reach, protects the read-only VCS Bundle drive so nothing ever writes to it, and picks the next usable writable location as the "update port". The port is opened only while Kodi is running (the service marks it open on start and closes it when Kodi exits) and is where the Game Updater looks for patches. Open it from Programs to see the access report.</description>
+    <description lang="en_GB">The Atari VCS runs every app in a sandbox that hides USB storage, so an add-on inside Kodi cannot mount or see a second drive on its own. This add-on reports exactly what it can and cannot reach, protects the read-only VCS Bundle drive so nothing ever writes to it, and picks the next usable writable location as the "update port". The port is opened only while Kodi is running (the service marks it open on start and closes it when Kodi exits) and is where the Kodi Updater USB Tool looks for patches. Open it from Programs to see the access report.</description>
     <license>GPL-2.0-or-later</license>
     <assets>
       <icon>icon.png</icon>

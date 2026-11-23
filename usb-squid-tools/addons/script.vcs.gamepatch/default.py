@@ -1,4 +1,4 @@
-# Game Updater: the screen the user opens from Programs. It lists the patches
+# Kodi Updater USB Tool: the screen the user opens from Programs. It lists the patches
 # waiting on the open USB update port, shows what each one does, and applies
 # the chosen one after checking the bundle information and every checksum.
 import os
@@ -16,7 +16,7 @@ sys.path.insert(0, xbmcaddon.Addon("script.vcs.usbport").getAddonInfo("path"))
 import patcher  # noqa: E402
 import port  # noqa: E402
 
-NAME = "Game Updater"
+NAME = "Kodi Updater USB Tool"
 
 
 def info(text):

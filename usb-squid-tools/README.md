@@ -1,12 +1,14 @@
 # USB SQUID tools
 
-These are the two USB update add-ons from the SQUID (Kodi for Atari VCS) bundle, along with the patch builder.
+These are the two USB update add-ons from the SQUID (Kodi for Atari VCS) bundle, along with the patch builder. They are kept here for now and are **not included in SQUID from v23 on**.
 
 - `addons/script.vcs.usbport`: the USB Update Port service and status screen.
-- `addons/script.vcs.gamepatch`: the Game Updater. It applies `.kodipatch` packages to SQUID itself, after checking the StoreID, the version and the SHA-256 of every file.
+- `addons/script.vcs.gamepatch`: the Kodi Updater USB Tool (called Game Updater before v23). It applies `.kodipatch` packages to SQUID itself, after checking the StoreID, the version and the SHA-256 of every file.
 - `patch-builder/`: `make-patch.py` (runs on a PC) builds `.kodipatch` packages. `patch-builder/README.md` documents the full format.
 
-Source: KodiVCS16-work (SQUID v21).
+Source: KodiVCS16-work (SQUID v21; usbport and gamepatch updated 2026-11-23 with the new name and icon).
+
+Limit: both run inside SQUID's sandbox on the VCS, which can only write to Kodi's own home folder. They cannot replace the files of installed games (in `/home/games/<StoreID>` or `bundles/<StoreID>` on the VCS_Bundles drive); that needs a tool that runs outside the sandbox.
 
 ## VCS Game Updater (`addons/script.vcs.gameupdater`)
 
