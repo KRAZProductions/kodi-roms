@@ -6,7 +6,7 @@ ROMs for the SQUID-MBC Kodi bundle on the Atari VCS, copied 2026-11-14 from
 | Folder | Games | System | Pack version |
 |---|---|---|---|
 | Jaguar-Games | 22 | Atari Jaguar | 1.1.0 |
-| Lynx-Games | 86 | Atari Lynx | 1.0.1 |
+| Lynx-Games | 86 | Atari Lynx | 1.0.2 |
 | NGP-Games | 36 | Neo Geo Pocket / Color | 1.0.0 |
 | Supervision-Games | 44 | Watara Supervision | 1.0.0 |
 

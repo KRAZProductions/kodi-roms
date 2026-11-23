@@ -9,7 +9,7 @@ BASE = (sys.argv[1] if len(sys.argv) > 1 else
         'https://raw.githubusercontent.com/KRAZProductions/kodi-roms/main').rstrip('/')
 REPO_ID, REPO_VER = 'repository.kraz.roms', '1.0.0'
 PACK_VER = '1.0.0'  # default; per-pack overrides below
-PACK_VERS = {'service.kraz.roms.jaguar': '1.1.0', 'service.kraz.roms.lynx': '1.0.1'}
+PACK_VERS = {'service.kraz.roms.jaguar': '1.1.0', 'service.kraz.roms.lynx': '1.0.2'}
 PACKS = [  # folder, add-on id, games source name used by SQUID, title
     ('Jaguar-Games', 'service.kraz.roms.jaguar', 'Jaguar Games', 'Atari Jaguar'),
     ('Lynx-Games', 'service.kraz.roms.lynx', 'Lynx Games', 'Atari Lynx'),
